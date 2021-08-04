@@ -1,0 +1,352 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* ==========================================================================
+    01. Navigation menu
+========================================================================== */
+.navbar {
+  display: flex;
+  position: relative;
+  font-family: "cursive", cursive;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar li {
+  list-style: none;
+  height: 25px;
+  margin: 5px 10px;
+}
+
+.navbar ul::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  display: inline;
+  height: 48px;
+  width: 685px;
+  opacity: 2.8;
+  z-index: -1;
+  border-radius: 57px;
+  border-style: solid;
+}
+.navbar li a {
+  color: black;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 15px;
+  text-decoration: none;
+}
+.navbar li a:hover {
+  color: black;
+  background-color: white;
+}
+
+#logo {
+  height: 66px;
+  width: 69px;
+  margin: 3px 53px;
+}
+
+h3 {
+  color: black;
+  position: relative;
+  right: -14px;
+  font-weight: bolder;
+  top: -28px;
+}
+
+/* ==========================================================================
+    02. Home section
+========================================================================== */
+#home {
+  height: 500px;
+  font-family: "Bree Serif", serif;
+  color: black;
+  padding: 15px 285px;
+}
+#home::before {
+  content: "";
+  background-image: url("../img/bg2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.9;
+  top: 0px;
+  left: 0px;
+}
+
+#services-container {
+  text-align: center;
+  position: relative;
+  top: 150px;
+}
+
+.services {
+  display: flex;
+}
+
+.box {
+  width: 33%;
+  margin: 0px 49px;
+  background-color: #e1caca;
+  border-radius: 21px;
+  font-family: "Baloo Bhai 2", cursive;
+  padding-bottom: 0px;
+}
+
+.box img {
+  width: 70%;
+  padding: 47px 0px;
+  padding-bottom: 0px;
+}
+
+.box:nth-child(2) img {
+  height: 43%;
+}
+
+.order-btn {
+  box-shadow: 0px 10px 14px -7px #276873;
+  background: linear-gradient(to bottom, #ff3838d0 5%, #f63636 100%);
+  background-color: #599bb3;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 13px 32px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #3d768a;
+  width: 105px;
+}
+.order-btn:hover {
+  background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+  background-color: #408c99;
+}
+.order-btn:active {
+  position: relative;
+  top: 1px;
+}
+
+/* ==========================================================================
+    03. Promises section
+========================================================================== */
+#promises-container {
+  text-align: center;
+  position: relative;
+  top: 200px;
+}
+
+.promises img {
+  margin: 9px 45px;
+  height: 97px;
+}
+#promises-container::before {
+  content: "";
+  background-image: url(..img\bg1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 350px;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+  top: 0px;
+  left: 0px;
+}
+
+/* ==========================================================================
+    04. Contact section
+========================================================================== */
+#contact-container {
+  position: relative;
+  top: 200px;
+  font-family: "Bree Serif", serif;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#contact-container::before {
+  content: "";
+  background-image: url(img/contact.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: -5px;
+  left: 0px;
+  width: 100%;
+  height: 40rem;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 34px;
+  text-align: start;
+}
+.form input,
+textarea {
+  background-color: #ffeded;
+  color: rgb(12, 1, 1);
+  font-family: "Baloo Bhai 2", cursive;
+  padding: 7px 20px;
+  margin: 8px 30px;
+  border: 2px solid #3c473c;
+  border-radius: 15px;
+  font-size: medium;
+  width: fit-content;
+  width: 500px;
+}
+.form textarea {
+  height: 100px;
+}
+
+.form label {
+  font-weight: bolder;
+}
+.form .btn {
+  position: relative;
+  top: 168px;
+  left: 35px;
+}
+
+/* ==========================================================================
+    05. Food menu 
+========================================================================== */
+.menu-items {
+  text-align: center;
+  margin: 0 auto;
+}
+.menu-titles h1 {
+  text-shadow: none;
+  color: #ed0121;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+#food-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu-images img {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: 5px solid #dadada;
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+}
+
+/* ==========================================================================
+    06. Utility Classes 
+========================================================================== */
+.h-primary {
+  font-size: 3.8rem;
+
+  font-family: "Bree Serif", serif;
+}
+
+.btn {
+  color: white;
+  background-color: #b03e2a;
+  padding: 10px 19px;
+  margin: 29px 13px;
+  font-size: 1rem;
+  border: 2px solid #c26d45;
+  border-radius: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #921c07;
+  font-weight: bolder;
+  padding: 10px 19px;
+  font-size: larger;
+}
+
+/* ==========================================================================
+    06. Footer Classes 
+========================================================================== */
+
+.footer-basic {
+  padding: 40px 0;
+  background-color: #ffffff;
+  color: #4b4c4d;
+}
+
+.footer-basic ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.footer-basic li {
+  padding: 0 10px;
+}
+
+.footer-basic ul a {
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity: 1;
+}
+
+.footer-basic .social {
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.footer-basic .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 8px;
+  color: inherit;
+  opacity: 0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity: 0.9;
+}
+
+.footer-basic .copyright {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 0;
+}
