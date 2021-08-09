@@ -2,25 +2,25 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+<link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/login.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login Page</title>
   </head>
-  <body>   
+  <body>  
     <div class="container">
       <div class="title">Login</div>
       <div class="content">
-        <form action="#" method="post">
+        <form name="login_form" onsubmit="return formValidation()">
           <div class="user-details">
             <div class="input-box">
               <span class="details">Email</span>
-              <input type="email" placeholder="Enter your email" name="email" required/><br><br>
+              <input type="email" placeholder="Enter your email" name="email"/><br><br>
               <span class="details">Password</span>
               <input
                 type="password"
                 placeholder="Enter your password"
 				name="password"
-                required
               />
             </div>
             </div>
@@ -34,6 +34,6 @@
           </p>
         </form>
       </div>
-    </div>
+    <script src="js/login.js"></script>
   </body>
 </html>

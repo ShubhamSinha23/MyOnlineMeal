@@ -2,7 +2,9 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/register.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Register Page</title>
   </head>
@@ -10,49 +12,62 @@
     <div class="container">
       <div class="title">Registration</div>
       <div class="content">
-        <form action="#" method="post">
+        <form name="registration" onSubmit="return formValidation();">
           <div class="user-details">
             <div class="input-box">
               <span class="details">Full Name</span>
-              <input type="text" placeholder="Enter your name" name="fullName" required />
+              <input
+                type="text"
+                placeholder="Enter your name"
+                name="fullName"
+                id="fullName"
+              />
             </div>
             <div class="input-box">
               <span class="details">Username</span>
-              <input type="text" placeholder="Enter your username" name="username" required />
+              <input
+                type="text"
+                placeholder="Enter your username"
+                name="username"
+                id="username"
+              />
             </div>
             <div class="input-box">
               <span class="details">Email</span>
-              <input type="email" placeholder="Enter your email" name="email" required />
+              <input type="email" placeholder="Enter your email" name="email" />
             </div>
             <div class="input-box">
               <span class="details">Phone Number</span>
-              <input type="text" placeholder="Enter your number" name="phoneNo" required />
+              <input
+                type="text"
+                placeholder="Enter your number"
+                name="phoneNo"
+              />
             </div>
             <div class="input-box">
               <span class="details">Password</span>
               <input
                 type="password"
                 placeholder="Enter your password"
-				name="password"
-                required
+                name="password"
+                id="password"
               />
             </div>
             <div class="input-box">
               <span class="details">Date of Birth</span>
-              <input type="date" placeholder="Enter your dob" name="dob" required />
+              <input type="date" placeholder="Enter your dob" name="dob" />
             </div>
             <div class="input-box">
               <span class="details">Confirm Password</span>
               <input
                 type="password"
                 placeholder="Confirm your password"
-				name="confirmpassword"
-                required
+                name="confirmpassword"
               />
             </div>
           </div>
           <div class="button">
-            <input type="submit" value="Register" />
+            <input type="submit" id="btn" value="Register" />
           </div>
           <p>
             Already have an account?
@@ -61,5 +76,6 @@
         </form>
       </div>
     </div>
+    <script src="js/register.js"></script>
   </body>
 </html>
